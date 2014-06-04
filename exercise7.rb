@@ -17,9 +17,9 @@ end
 list(students)
 
 
-puts "\n"  		#adds extra blank line
+puts "\n"  		# adds extra blank line
 
-students.each { |key, value| puts "The cohorts are: #{key}" }
+puts "The cohorts are: #{students.keys.join(', ')}"  	# joined line together with , and space
 
 puts "\n"
 
@@ -31,4 +31,5 @@ end
 
 puts "\n"
 
-students.delete("cohort2")
+students.delete(:cohort2)
+list(students)
