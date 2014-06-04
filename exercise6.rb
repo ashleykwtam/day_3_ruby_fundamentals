@@ -1,6 +1,6 @@
 # Shopping list exercise
 
-grocery_list = ["carrots", "toilet paper", "spinach", "apples", "almonds", "rice"]
+grocery_list = ["carrots", "toilet paper", "apples", "salmon", "rice"]
 
 grocery_list.each do |item|
 	puts "* "+item 					#need " " to separate * and item
@@ -15,3 +15,4 @@ else
 	puts "No need to pick up bananas."
 end
 
+puts "The second item in my list is #{grocery_list[1]}."
