@@ -8,7 +8,14 @@ students = {
 
 students[:cohort4] = 43
 
-students.each { |key, value| puts "In #{key} there are #{value} students."; }
+def list(x)
+	x.each do |k, v|
+		puts "In #{k} there are #{v} students."
+	end
+end
+
+list(students)
+
 
 puts "\n"  		#adds extra blank line
 
@@ -18,6 +25,10 @@ puts "\n"
 
 students.each do |k, v| 
 	v = (v * 1.05).round(0)
-	puts "The expansion in each #{k} is #{v}"
+	puts "The expansion in each #{k} is #{v}."
 	students[k] = v 			 #sets v as new value permanently
 end
+
+puts "\n"
+
+students.delete("cohort2")
