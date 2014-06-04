@@ -24,3 +24,6 @@ puts "The second item in my list is #{grocery_list[1]}."
 puts "My grocery list in alphabetical order is:"
 list(grocery_list.sort)
 
+puts "Delete salmon from list: "
+grocery_list.delete("salmon")
+list(grocery_list)
