@@ -33,3 +33,11 @@ puts "\n"
 
 students.delete(:cohort2)
 list(students)
+
+puts "\n"
+
+students[:cohort2] = 44
+number = students.values
+sum = 0
+number.each { |x| sum += x }
+puts "The number of total graduating students is #{sum}."
