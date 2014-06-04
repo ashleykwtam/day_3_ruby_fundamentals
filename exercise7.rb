@@ -9,3 +9,5 @@ students = {
 students[:cohort4] = 43
 
 students.each {|key, value| puts "In #{key} there are #{value} students."}
+
+students.each {|key, value| puts "The cohorts are: #{key}"}
